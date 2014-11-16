@@ -5,7 +5,7 @@
          {% if articles %}
             {% set copy_date = articles[0].date.strftime('%Y') %}
          {% else %}
-            {% set copy_date = '' %}
+            {% set copy_date = LAST_MODIFIED_YEAR %}
          {% endif %}
          <div class="col-xs-10">&copy; {{ copy_date }} {{ AUTHOR }}
             &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
