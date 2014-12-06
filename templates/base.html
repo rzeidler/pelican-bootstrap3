@@ -133,7 +133,7 @@
                 </form></span>
               </li>
             {% endif %}
-            {% if ARCHIVE_IN_NAV %}
+            {% if not HIDE_ARCHIVES %}
               <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL | default('archives.html') }}"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             {% endif %}
             </ul>
